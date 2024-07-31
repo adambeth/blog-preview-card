@@ -31,7 +31,6 @@ body {
   box-shadow: 8px 8px var(--gray-950);
   width: 80%; /* Change to percentage */
   max-width: 24rem; /* Optional: Set a max-width */
-  height: 32.6rem;
   padding: var(--spacing-200, 24px);
   /* margin: 0 auto; */
 }
@@ -96,7 +95,23 @@ footer {
   align-items: center;
   padding-left: 0;
   gap: 0;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  .author-card {
+    flex-direction: column; /* Stack items vertically on narrow screens */
+    align-items: flex-start;
+  }
+
+  .author-card img.avatar {
+    margin-bottom: var(--spacing-50, 4px); /* Add space below the avatar */
+  }
+  .author-card span {
+    white-space: normal; /* Allow text to wrap */
+  }
 }
