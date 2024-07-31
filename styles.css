@@ -14,8 +14,7 @@
 }
 
 body {
-  height: 1440px;
-  height: 960px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,10 +29,11 @@ body {
   border-color: var(--gray-950);
   border-radius: 10px;
   box-shadow: 8px 8px var(--gray-950);
-  width: 384px;
+  width: 80%; /* Change to percentage */
+  max-width: 24rem; /* Optional: Set a max-width */
+  height: 32.6rem;
   padding: var(--spacing-200, 24px);
-  margin: 0 auto;
-  padding: 10px;
+  /* margin: 0 auto; */
 }
 
 footer {
@@ -68,8 +68,6 @@ footer {
 }
 
 .learning-card {
-  display: flex;
-  padding: var(--spacing-150, 12px);
   justify-content: center;
   align-items: center;
   gap: var(--spacing-100, 8px);
@@ -78,6 +76,11 @@ footer {
   font-weight: 800;
   line-height: 150%;
   padding: var(--spacing-200);
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 800;
+  padding: 0.37rem 0.78rem;
+  border-radius: 4.5px;
 }
 .avatar {
   width: 32px !important;
